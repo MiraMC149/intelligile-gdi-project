@@ -1,0 +1,16 @@
+﻿  main.cpp
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(63,9): error C2143: syntax error: missing ';' before '*'
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(63,9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(63,18): error C2238: unexpected token(s) preceding ';'
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(64,9): error C2143: syntax error: missing ';' before '*'
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(64,9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(64,21): error C2238: unexpected token(s) preceding ';'
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(101,8): error C2143: syntax error: missing ';' before '*'
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(101,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(101,18): error C2238: unexpected token(s) preceding ';'
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(102,8): error C2143: syntax error: missing ';' before '*'
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(102,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(102,18): error C2238: unexpected token(s) preceding ';'
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(131,24): error C2039: 'pa': is not a member of 'GLine'
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(129): message : see declaration of 'GLine'
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(132,2): error C2143: syntax error: missing ';' before '}'
