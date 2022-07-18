@@ -1,9 +1,9 @@
 #pragma once
-// put in GWorld.h
+#include <cstdint>
 
 namespace GWorld {
-	typedef uint32_t GFlags; //change long to int32
-	typedef uint32_t GColor;//change long to int32
+	typedef uint32_t GFlags; 
+	typedef uint32_t GColor;
 	typedef uint32_t GStyle;
 	typedef uint32_t GSHType;
 	typedef uint32_t GThickness;
@@ -30,8 +30,8 @@ namespace GWorld {
 	};
 
 	typedef struct gpoint_struct {
-		double x;
-		double y;
+		int x;
+		int y;
 	}GPoint;
 
 	typedef struct gdimension_struct {
@@ -39,4 +39,3 @@ namespace GWorld {
 		double h;
 	}GDimension;
 };
-typedef unsigned int uint32_t

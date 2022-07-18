@@ -18,7 +18,7 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GDI.cpp">
+    <ClCompile Include="IIIGDI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="View.cpp">

@@ -133,7 +133,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="GDI.cpp" />
+    <ClCompile Include="IIIGDI.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="View.cpp" />
   </ItemGroup>

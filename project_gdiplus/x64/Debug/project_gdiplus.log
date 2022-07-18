@@ -1,16 +1,17 @@
-﻿  main.cpp
-C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(63,9): error C2143: syntax error: missing ';' before '*'
-C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(63,9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(63,18): error C2238: unexpected token(s) preceding ';'
-C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(64,9): error C2143: syntax error: missing ';' before '*'
-C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(64,9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(64,21): error C2238: unexpected token(s) preceding ';'
-C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(101,8): error C2143: syntax error: missing ';' before '*'
-C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(101,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(101,18): error C2238: unexpected token(s) preceding ';'
-C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(102,8): error C2143: syntax error: missing ';' before '*'
-C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(102,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(102,18): error C2238: unexpected token(s) preceding ';'
-C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(131,24): error C2039: 'pa': is not a member of 'GLine'
-C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(129): message : see declaration of 'GLine'
-C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\main.cpp(132,2): error C2143: syntax error: missing ';' before '}'
+﻿  GDI.cpp
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\GDI.cpp(14,49): error C2065: 'themeColor': undeclared identifier
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\GDI.cpp(17,70): error C2440: '=': cannot convert from 'GWorld::GColor' to 'Gdiplus::ARGB *'
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\GDI.cpp(17,45): message : Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or parenthesized function-style cast
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\GDI.cpp(20,38): error C2440: '<function-style-cast>': cannot convert from 'Gdiplus::ARGB *' to 'Gdiplus::Color'
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\GDI.cpp(20,38): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\GDI.cpp(37,50): error C2065: 'themeColor': undeclared identifier
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\GDI.cpp(40,72): error C2440: '=': cannot convert from 'GWorld::GColor' to 'Gdiplus::ARGB *'
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\GDI.cpp(40,46): message : Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or parenthesized function-style cast
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\GDI.cpp(44,38): error C2440: '<function-style-cast>': cannot convert from 'Gdiplus::ARGB *' to 'Gdiplus::Color'
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\GDI.cpp(44,38): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\GDI.cpp(48,13): error C2146: syntax error: missing ';' before identifier 'rec'
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\GDI.cpp(48,3): warning C4551: function call missing argument list
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\GDI.cpp(48,13): error C2065: 'rec': undeclared identifier
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\GDI.cpp(50,32): error C2664: 'Gdiplus::Status Gdiplus::Graphics::FillRectangle(const Gdiplus::Brush *,const Gdiplus::RectF &)': cannot convert argument 1 from 'Gdiplus::SolidBrush (__cdecl *)(Gdiplus::Color)' to 'const Gdiplus::Brush *'
+C:\Users\User\Documents\VS C++\project_gdiplus\project_gdiplus\GDI.cpp(50,20): message : There is no context in which this conversion is possible
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusGraphics.h(961,12): message : see declaration of 'Gdiplus::Graphics::FillRectangle'

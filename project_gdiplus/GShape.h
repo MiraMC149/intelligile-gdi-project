@@ -3,7 +3,6 @@
 #include "GWorld.h"
 #include "GObject.h"
 
-// GShape.h
 class GShape {
 protected:
 	GWorld::GFlags flags;
@@ -26,6 +25,6 @@ class GLine : GShape {
 public:
 	void Draw() {
 		void* _DC = parent->parent->DC;
-		drawLine(DC, scaledPoints, n, pen, fill, style, thickness);
+		drawLine(_DC, scaledPoints, n, pen, fill, style, thickness);
 	};
 };
