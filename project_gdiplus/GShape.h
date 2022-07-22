@@ -3,13 +3,13 @@
 #include "GWorld.h"
 #include "GObject.h"
 
-class GShape {
-protected:
+class GShape : public GObject{
+public:
 	GWorld::GFlags flags;
 	GWorld::GSHType type;
 	GWorld::GPoint* points;
-	long n;
-	GWorld::GPoint* scaledPoints;
+	uint32_t n;
+	GWorld::GPoint scaledPoints[4];
 	GObject* parent;
 	GShape* prev;
 	GShape* next;
@@ -17,14 +17,7 @@ protected:
 	GWorld::GColor fill;
 	GWorld::GStyle style;
 	GWorld::GThickness thickness;
-public:
-	virtual void Draw() {};
-};
+	GWorld::GColor* themeColor;
 
-class GLine : GShape {
-public:
-	void Draw() {
-		void* _DC = parent->parent->DC;
-		drawLine(_DC, scaledPoints, n, pen, fill, style, thickness);
-	};
+	void Draw() {};
 };

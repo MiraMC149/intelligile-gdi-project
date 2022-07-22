@@ -138,7 +138,10 @@
     <ClCompile Include="View.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="GEllipse.h" />
+    <ClInclude Include="GLine.h" />
     <ClInclude Include="GObject.h" />
+    <ClInclude Include="GRectangle.h" />
     <ClInclude Include="GShape.h" />
     <ClInclude Include="GView.h" />
     <ClInclude Include="GWorld.h" />

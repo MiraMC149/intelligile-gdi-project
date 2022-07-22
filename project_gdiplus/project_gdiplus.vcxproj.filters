@@ -38,5 +38,14 @@
     <ClInclude Include="GView.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="GLine.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GRectangle.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GEllipse.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

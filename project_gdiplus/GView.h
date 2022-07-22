@@ -1,11 +1,12 @@
 #pragma once
 #include "GObject.h"
+#include "IIIGDI.cpp"
 // GView.h;
 class GView {
-private:
+public:
 	GObject* TopGObj;
 	GObject* BottomGobj;
 	void* DC;
-public:
+
 	void draw();
 };

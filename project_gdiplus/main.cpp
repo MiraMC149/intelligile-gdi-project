@@ -2,6 +2,10 @@
 #include <gdiplus.h>
 #include <gdiplusheaders.h>
 #include "GWorld.h"
+#include <iostream>
+#include "IIIGDI.cpp"
+
+
 
 LRESULT CALLBACK WindowProcessMessages(HWND hwnd, UINT msg, WPARAM param, LPARAM lparam);
 void draw(HDC hdc);
@@ -57,6 +61,25 @@ LRESULT CALLBACK WindowProcessMessages(HWND hwnd, UINT msg, WPARAM param, LPARAM
 		return DefWindowProc(hwnd, msg, param, lparam);
 	}
 }
+int main(int argc, char* argv[])
+{
+	/*HWND hwnd;
+	PAINTSTRUCT ps;
+	HDC hdc = BeginPaint(hwnd, &ps);
+	draw(hdc);
+	EndPaint(hwnd, &ps);
+	GWorld::GPoint A;
+	A.x = 2;
+	A.y = 2;
+	GWorld::GPoint B;
+	B.x = 2;
+	B.y = 2;
+	GWorld::GColor drawPen= 80;
+	GWorld::GThickness thickness = 3;
+	GWorld::GColor themeColor = 80080;
+	drawLine(hdc, &A, &B, drawPen, thickness, &themeColor);*/
+}
+
 
 
 

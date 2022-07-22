@@ -3,9 +3,7 @@
 #include <gdiplus.h>
 #include <gdiplusheaders.h>
 
-//(windowbased code)
-
-void drawLine(void* DC, GWorld::GPoint* scaledPoint1, GWorld::GPoint* scaledPoint2, long n, GWorld::GColor pen, GWorld::GStyle style, GWorld::GThickness thickness, GWorld::GColor* themeColor) {
+inline void drawLine(void* DC, GWorld::GPoint scaledPoints[2], GWorld::GColor pen, GWorld::GThickness thickness, GWorld::GColor* themeColor) {
 	HDC hdc = (HDC)DC;
 	Gdiplus::ARGB color;
 	Gdiplus::Graphics gf(hdc);
@@ -18,11 +16,11 @@ void drawLine(void* DC, GWorld::GPoint* scaledPoint1, GWorld::GPoint* scaledPoin
 		}
 
 		Gdiplus::Pen drawPen(Gdiplus::Color(color), thickness);
-		gf.DrawLine(&drawPen, scaledPoint1->x, scaledPoint1->y, scaledPoint2->x, scaledPoint2->y );
+		gf.DrawLine(&drawPen, scaledPoints[0].x, scaledPoints[0].y, scaledPoints[1].x, scaledPoints[1].y);
 	}
 }
 
-void drawRectangle(void* DC, GWorld::GPoint* scaledPoint, long n, GWorld::GColor fill, GWorld::GColor pen, GWorld::GStyle style, GWorld::GThickness thickness, GWorld::GColor* themeColor, int width, int height) {
+inline void drawRectangle(void* DC, GWorld::GPoint scaledPoints[1], GWorld::GColor fill, GWorld::GColor pen, GWorld::GThickness thickness, GWorld::GColor* themeColor, int width, int height) {
 	HDC hdc = (HDC)DC;
 	Gdiplus::ARGB color;
 	Gdiplus::Graphics gf(hdc);
@@ -36,7 +34,7 @@ void drawRectangle(void* DC, GWorld::GPoint* scaledPoint, long n, GWorld::GColor
 
 		Gdiplus::SolidBrush drawbrush(Gdiplus::Color(color)); //issue here
 		Gdiplus::SolidBrush brush(Gdiplus::Color(255, 0, 255, 0));
-		gf.FillRectangle(&brush, scaledPoint->x, scaledPoint->y, width, height);
+		gf.FillRectangle(&brush, scaledPoints[0].x, scaledPoints[0].y, width, height);
 		
 	}
 	if (pen != GWorld::NOCOLOR) {
@@ -49,12 +47,12 @@ void drawRectangle(void* DC, GWorld::GPoint* scaledPoint, long n, GWorld::GColor
 
 		Gdiplus::Pen drawPen(Gdiplus::Color(color), thickness);
 
-		[in, ref] const Gdiplus::Rect rect(scaledPoint->x, scaledPoint->y, width, height);
+		const Gdiplus::Rect rect(scaledPoints[0].x, scaledPoints[0].y, width, height);
 		gf.DrawRectangle(&drawPen, rect);
 	}
 }
 
-void drawEllipse(void* DC, GWorld::GPoint* scaledPoint, GWorld::GColor fill, GWorld::GColor pen, GWorld::GStyle style, GWorld::GThickness thickness, GWorld::GColor* themeColor, int width, int height) {
+inline void drawEllipse(void* DC, GWorld::GPoint scaledPoints[1], GWorld::GColor fill, GWorld::GColor pen, GWorld::GStyle style, GWorld::GThickness thickness, GWorld::GColor* themeColor, int width, int height) {
 	HDC hdc = (HDC)DC;
 	Gdiplus::ARGB color;
 	Gdiplus::Graphics gf(hdc);
@@ -68,8 +66,8 @@ void drawEllipse(void* DC, GWorld::GPoint* scaledPoint, GWorld::GColor fill, GWo
 
 		Gdiplus::SolidBrush drawbrush(Gdiplus::Color(color)); //issue here
 		Gdiplus::SolidBrush brush(Gdiplus::Color(255, 0, 255, 0));
-		[in, ref] const Gdiplus::Rect rect(scaledPoint->x, scaledPoint->y, width, height);
-		gf.FillEllipse(&brush, scaledPoint->x, scaledPoint->y, width, height);
+		const Gdiplus::Rect rect(scaledPoints[0].x, scaledPoints[0].y, width, height);
+		gf.FillEllipse(&brush, scaledPoints[0].x, scaledPoints[0].y, width, height);
 
 	}
 
@@ -83,7 +81,7 @@ void drawEllipse(void* DC, GWorld::GPoint* scaledPoint, GWorld::GColor fill, GWo
 
 		Gdiplus::Pen drawPen(Gdiplus::Color(color), thickness);
 
-		gf.DrawEllipse(&drawPen, scaledPoint->x, scaledPoint->y, width, height);
+		gf.DrawEllipse(&drawPen, scaledPoints[0].x, scaledPoints[0].y, width, height);
 	}
 	
 };
